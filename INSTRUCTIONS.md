@@ -1,4 +1,3 @@
-<img src="images/1.jpg" align="center" width="200" alt="Serverless Bytes | Building a Serverless App">
 
 Table of Contents
 
@@ -18,7 +17,7 @@ Table of Contents
 
 * [Conclusion](#conclusion)
 
-<a name="overview"></a>
+
 # 1. Overview
 
 <a href="https://www.youtube.com/watch?v=Hv3YrP8G4ag" target="_blank"><img src="images/twitch.png" align="center" width="500" alt="Serverless Bytes | Building a Serverless App"></a>
@@ -42,14 +41,14 @@ In this Lab, you will experience:
 
 **Important:** Many of the steps in this lab involve resolving errors that have been built in to the provided starter files (in step 17). This approach will show how the IDE can be used to develop, test and deploy serverless applications.
 
-<a name="intro"></a>
+
 # 2. Introduction
 
 In this hands-on lab, we are going to start with a Hello World node.js serverless app that returns a static web page. As part of this lab, we will be developing, testing, debugging and deploying a new serverless function for adding 2 numbers. The high level architecture is as follows:
 
 ![](images/intro.png)
 
-<a name="devtool"></a>
+
 # 3. Launching a development toolchain using AWS CodeStar
 
 1. Sign into the AWS Management Console [https://console.aws.amazon.com/](https://console.aws.amazon.com/).
@@ -97,7 +96,7 @@ Click **Next**.
  
 14. Click on the endpoint URL. You should see a &quot;Hello World&quot; web page rendered by Node.js. Congratulations! You successfully configured an end-to-end development and continuous deployment pipeline on AWS.
 
-<a name="cloud9"></a>
+
 # 4. Writing your first AWS Lambda Function on AWS Cloud9
 
 15. Go back to the AWS CodeStar dashboard, and click on **IDE** on the left pane.
