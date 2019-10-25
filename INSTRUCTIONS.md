@@ -1,5 +1,7 @@
+# Configuring CI/CD Pipeline
 
-Table of Contents
+## Table of Contents
+
 
 * [Overview](#overview)
 
@@ -18,7 +20,7 @@ Table of Contents
 * [Conclusion](#conclusion)
 
 
-# 1. Overview
+## 1. Overview
 
 <a href="https://www.youtube.com/watch?v=Hv3YrP8G4ag" target="_blank"><img src="images/twitch.png" align="center" width="500" alt="Serverless Bytes | Building a Serverless App"></a>
 <br />
@@ -42,14 +44,14 @@ In this Lab, you will experience:
 **Important:** Many of the steps in this lab involve resolving errors that have been built in to the provided starter files (in step 17). This approach will show how the IDE can be used to develop, test and deploy serverless applications.
 
 
-# 2. Introduction
+## 2. Introduction
 
 In this hands-on lab, we are going to start with a Hello World node.js serverless app that returns a static web page. As part of this lab, we will be developing, testing, debugging and deploying a new serverless function for adding 2 numbers. The high level architecture is as follows:
 
 ![](images/intro.png)
 
 
-# 3. Launching a development toolchain using AWS CodeStar
+## 3. Launching a development toolchain using AWS CodeStar
 
 1. Sign into the AWS Management Console [https://console.aws.amazon.com/](https://console.aws.amazon.com/).
 
@@ -97,7 +99,7 @@ Click **Next**.
 14. Click on the endpoint URL. You should see a &quot;Hello World&quot; web page rendered by Node.js. Congratulations! You successfully configured an end-to-end development and continuous deployment pipeline on AWS.
 
 
-# 4. Writing your first AWS Lambda Function on AWS Cloud9
+## 4. Writing your first AWS Lambda Function on AWS Cloud9
 
 15. Go back to the AWS CodeStar dashboard, and click on **IDE** on the left pane.
 Click **Open IDE.**
@@ -228,8 +230,7 @@ should return the following:
 
 22. Congratulations! You have implemented add()as an AWS Lambda function.
 
-<a name="sam"></a>
-# 5. Deploying Your Function using AWS SAM and AWS CodeDeploy
+## 5. Deploying Your Function using AWS SAM and AWS CodeDeploy
 
 23. We will now configure our git user in the AWS Cloud9 environment so we can commit our changes to the code repository
 
@@ -279,7 +280,7 @@ aws cloudformation deploy \
 
 
 <a name="debugging"></a>
-# 6. Debugging and Monitoring your function
+## 6. Debugging and Monitoring your function
 
 26. After a successful deployment, open the AWS CodeStar project dashboard and copy our _Application endpoints_ location.
 
@@ -344,7 +345,7 @@ git push origin master
 
 33.	Wait for our Continuous Deployment pipeline to complete, and test it from our live endpoint that looks similar to: https://xxxx.execute-api.us-east-1.amazonaws.com/Prod/add/25/75  
 
-## Adding AWS X-Ray to your Lambda Function
+### Adding AWS X-Ray to your Lambda Function
 
 34.	Go to project dashboard and click Project on the left menu. We need to add X-Ray permission to the lambda execution policy. Click CodeStarWorker-serverless-lab-Lambda role and add the following x-ray FullAccess to the policy.
 
@@ -406,11 +407,11 @@ https://xxxx.execute-api.us-east-1.amazonaws.com/Prod/add/25/75
 40. Congratulations, you have completed the lab.
 
 <a name="cleanup"></a>
-# 7. Clean up
+## 7. Clean up
 
 After you are done with your lab, head over to the CloudFormation console (listed under Services) and delete `aws-cloud9-serverless-lab-xxxxxx`, `awscodestar-serverless-lab-lambda`, and `awscodestar-server-lab` stacks. This will delete all the resources we created during this lab.
 
 <a name="conclusion"></a>
-# 8. Conclusion
+## 8. Conclusion
 
 In this lab you have learned creating end-to-end development tools using AWS CloudStar, writing your first Serverless microservice using AWS Lambda and Amazon API Gateway using the AWS Cloud9 IDE.
