@@ -5,6 +5,8 @@
 
 * [Overview](#overview)
 
+* [Pre-Requisites](#pre-requisites)
+
 * [Introduction](#intro)
 
 * [Launching a development toolchain using AWS CodeStar](#devtool)
@@ -43,6 +45,9 @@ In this Lab, you will experience:
 
 **Important:** Many of the steps in this lab involve resolving errors that have been built in to the provided starter files (in step 17). This approach will show how the IDE can be used to develop, test and deploy serverless applications.
 
+## Pre-Requisites
+
+None required
 
 ## 2. Introduction
 
